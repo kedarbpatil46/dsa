@@ -34,6 +34,7 @@ fn main() -> io::Result<()> {
     }
 
     println!("Out of the loop");
+    //
 
     Ok(())
 }
