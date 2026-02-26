@@ -23,6 +23,7 @@ fn main() -> io::Result<()> {
     pattern10(cycle);
     pattern11(cycle);
     pattern12(cycle);
+    pattern13(cycle);
 
     Ok(())
 }
@@ -173,6 +174,14 @@ fn pattern12(x: usize) {
     }
 }
 
-fn pattern13() {
-    
+fn pattern13(x:usize) {
+    let mut counter = 1;
+    for i in 1..(x+1) {
+        let mut ans = String::new();
+        for _ in 0..i {
+            ans.push_str(&(counter.to_string()));
+            counter = counter + 1;
+        }
+        println!("{}", ans);
+    }
 }
